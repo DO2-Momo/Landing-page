@@ -7,51 +7,53 @@ body {
   background-color: #457580;
   color: white;
   font-family: Arial;
-  }
+  margin: 0px;
+}
 
-  nav{
-    background: #38555e;
-    height: 80px;
-    width: 100%;
-  }
+nav{
+  background: #38555e;
+  height: 80px;
+  width: 100%;
+}
 
-  nav ul {
+nav ul {
   float: right;
   font-size: 35px;
   margin: 0;
   padding: 0;
-  }
-  
-  nav ul li {
+}
+
+nav ul li {
   display: inline-block;
   line-height: 80px;
   margin: 0 5px;
-  }
-  
-  nav ul li a {
+}
+
+nav ul li a {
   color: white;
   font-size: 17px;
   text-transform: uppercase;
-  }
-  
-  nav ul li a:hover {
+}
+
+nav ul li a:hover {
   text-decoration: underline;
-  }
-  label.logo{
-    color: white;
-    font-size: 35px;
-    line-height: 80px;
-    padding: 0 100px;
-    font-weight: bold;
-    }
-  .container{
+}
+label.logo{
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+
+.container{
   max-width: 800px;
   margin: auto;
   padding: 20px;
   text-align: center;
-  }
-  
-  .btn-install{
+}
+
+.btn-install{
   background-color: #61dafb;
   color: black;
   padding: 10px 20px;
@@ -61,16 +63,16 @@ body {
   font-weight: bold;
   cursor: pointer;
   text-decoration: none;
-  }
-  
-  .btn-install:hover{
+}
+
+.btn-install:hover{
   background-color: #48bfe3;
-  }
-  
-  h1{
-  font-size: 50px;
-  }
-  
-  h2{
-  font-size: 30px;
-  }
+}
+
+h1{
+font-size: 50px;
+}
+
+h2{
+font-size: 30px;
+}
