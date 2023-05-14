@@ -1,78 +1,162 @@
-/* *{ 
-  margin: 0;
-  padding: 0;
-}  */
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+
+:root {
+  --surface: #202324;
+  --background: #131516; 
+  --text: #d8d4cf;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+.floating-icon {
+  position: relative;
+  top: 20%;
+
+  animation: 0.7s ease-out 0s 1 slideDown;
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-50%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 
 body {
-  background-color: #457580;
-  color: white;
-  font-family: Arial;
+  background-color: var(--background);
+  color: var(--text);
+
+  font-family: 'Alata', sans-serif;
   margin: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  padding: 4rem;
+  height: 90vh;
+  vertical-align: middle;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  background-image: url('./assets/do2_lowres.jpg'); 
+
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top; 
+
+  background-color: rgba(0,0,0,.4);
+  background-blend-mode: multiply;
+
+}
+
+main {
+  margin: auto;
+  padding: 2rem;
+  text-align: center;
+  width: 60%;
+}
+
+header {
+  height: 90vh;
+}
+
+/* smartphones, Android phones, landscape iPhone */
+@media only screen and (max-width: 998px) {
+  header {
+    height: 40vh;
+  }
+
+  main {
+    width: 88%;
+  }
+}
+
+
+
+.wrapper {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+
+}
+
+.video-wrap {
+  display:flex;
+  flex-direction: row;
+  gap:2rem;
+  margin-top: 6rem;
+  margin: 2rem;
+}
+
+.buttonGrid {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+a {
+  margin: 0px;
+  padding: 0px;
+}
+
+button {
+  background-color: var(--surface);
+  color: var(--text);
+  
+  transition: 0.2s;
+
+  padding: 0.75rem;
+
+  text-align: center;
+  
+  font-size: 18px;
+
+  border-radius: 12px;
+  border: none;
+}
+
+button:hover {
+  transition: 0.2s;
+  transform: scale(1.12);
+  filter: brightness(1.2);
+  cursor: pointer;
 }
 
 nav{
   background: #38555e;
-  height: 80px;
+
   width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+
+  margin: 0px;
 }
 
-nav ul {
-  float: right;
-  font-size: 35px;
-  margin: 0;
-  padding: 0;
-}
-
-nav ul li {
-  display: inline-block;
-  line-height: 80px;
-  margin: 0 5px;
-}
-
-nav ul li a {
-  color: white;
-  font-size: 17px;
-  text-transform: uppercase;
-}
-
-nav ul li a:hover {
-  text-decoration: underline;
-}
 label.logo{
-  color: white;
+  color: var(--text);
   font-size: 35px;
   line-height: 80px;
   padding: 0 100px;
   font-weight: bold;
 }
 
-.container{
-  max-width: 800px;
-  margin: auto;
-  padding: 20px;
-  text-align: center;
-}
-
-.btn-install{
-  background-color: #61dafb;
-  color: black;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  font-size: 20px;
-  font-weight: bold;
-  cursor: pointer;
-  text-decoration: none;
-}
-
-.btn-install:hover{
-  background-color: #48bfe3;
-}
-
 h1{
-font-size: 50px;
+  font-size: 50px;
 }
 
 h2{
-font-size: 30px;
+  font-size: 30px;
 }
