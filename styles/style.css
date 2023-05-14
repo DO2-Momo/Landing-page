@@ -11,6 +11,11 @@ html {
   height: 100%;
 }
 
+.title {
+  position: relative;
+  top: 3%;
+}
+
 .floating-icon {
   position: relative;
   top: 20%;
@@ -48,7 +53,7 @@ header {
   justify-content: center;
   align-items: center;
 
-  background-image: url('./assets/do2_lowres.jpg'); 
+  background-image: url('../assets/do2_lowres.jpg'); 
 
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -57,6 +62,18 @@ header {
   background-color: rgba(0,0,0,.4);
   background-blend-mode: multiply;
 
+}
+
+a {
+  text-decoration: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.img-button {
+  display: flex;
+  gap: 0.45rem;
+  align-items: center;
 }
 
 main {
@@ -75,6 +92,38 @@ iframe {
   height: 281px;
 }
 
+
+button {
+  background-color: var(--surface);
+  color: var(--text);
+  
+  transition: 0.2s;
+
+  padding: 0.75rem;
+
+  text-align: center;
+  
+  font-size: 1.2rem;
+
+  border-radius: 12px;
+  border: none;
+}
+
+button:hover {
+  transition: 0.2s;
+  transform: scale(1.12);
+  filter: brightness(1.2);
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
 /* smartphones, Android phones, landscape iPhone */
 @media only screen and (max-width: 998px) {
   header {
@@ -88,6 +137,39 @@ iframe {
   iframe {
     width: 350px;
     height: 196px;
+  }
+
+  button {
+    padding: 1rem;
+    font-size: 2.3rem;
+  }
+
+  h1 {
+    font-size: 72px;
+  }
+
+  #gh-logo {
+    width: 42px;
+    height: 42px;
+  }
+
+  .img-button {
+    gap: 1rem;
+  }
+
+  .floating-icon {
+    filter: opacity(0);
+  }
+
+  @keyframes slideDown {
+    0% {
+      transform: translateY(-50%);
+      filter: opacity(1);
+    }
+    100% {
+      transform: translateY(0);
+      filter: opacity(0)
+    }
   }
 }
 
@@ -111,42 +193,6 @@ iframe {
   display: flex;
   flex-direction: row;
   gap: 1rem;
-}
-
-a {
-  margin: 0px;
-  padding: 0px;
-}
-
-button {
-  background-color: var(--surface);
-  color: var(--text);
-  
-  transition: 0.2s;
-
-  padding: 0.75rem;
-
-  text-align: center;
-  
-  font-size: 18px;
-
-  border-radius: 12px;
-  border: none;
-}
-
-button:hover {
-  transition: 0.2s;
-  transform: scale(1.12);
-  filter: brightness(1.2);
-  cursor: pointer;
-}
-
-h1{
-  font-size: 50px;
-}
-
-h2{
-  font-size: 30px;
 }
 
 
