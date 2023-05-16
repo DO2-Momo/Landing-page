@@ -81,6 +81,11 @@ main {
   padding: 2rem;
   text-align: center;
   width: 60%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 header {
@@ -92,6 +97,14 @@ iframe {
   height: 281px;
 }
 
+.text-block {
+  max-width: 80%;
+  text-align: justify;
+}
+
+.tutorials {
+  margin-top: 12rem;
+}
 
 button {
   background-color: var(--surface);
@@ -135,8 +148,8 @@ h2 {
   }
 
   iframe {
-    width: 350px;
-    height: 196px;
+    width: 267.75px;
+    height: 175px;
   }
 
   button {
@@ -170,6 +183,15 @@ h2 {
       transform: translateY(0);
       filter: opacity(0)
     }
+  }
+
+
+  .text-block {
+    max-width: 94%;
+  }
+
+  p {
+    font-size: 45px;
   }
 }
 
